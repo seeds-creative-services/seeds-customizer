@@ -1,14 +1,16 @@
 <?php
 /**
-Plugin Name: Seeds Customizer
-Description: Adds customization options to the WordPress site.
+Plugin Name: SEEDS: Theme Customizer
+Description: Adds theme customization options to the WordPress site.
 Version: 1.0.0
 Author: Seeds Creative Services, LLC.
 Author URI: https://seedscreativeservices.com
 Text Domain: seeds_customizer
 */
 
-class SeedsCustomizer {
+namespace SEEDS\PLUGINS;
+
+class Customizer {
 
   public function __construct() {
 
@@ -107,5 +109,4 @@ class SeedsCustomizer {
 
 }
 
-global $SeedsCustomizer;
-$SeedsCustomizer = new SeedsCustomizer;
+return new Customizer;
